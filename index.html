@@ -13,7 +13,7 @@
 <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
 
   <!-- Navbar -->
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top d-flex align-items-center py-3 px-2">
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top d-flex align-items-center py-3 px-4">
     <div class="container-content d-flex justify-content-between">
       <div class="d-flex align-items-center">
         <a class="navbar-brand fw-bold me-3" href="#home-content"><img src="images/okinawa-logo.png"></a>
@@ -28,7 +28,7 @@
         </div>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
+        <img src="images/ic-menu.png" alt="Menu" width="50" />
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
@@ -47,7 +47,7 @@
 
   <!-- 1Sections Home -->
   <section id="home">
-    <div style="height: 70px;" id="home-content"></div>
+    <div id="home-content"></div>
     <div class="pt-4">
       <img src="images/banner.png" alt="Okinawa" class="img-fluid" />
       <img src="images/section1-footer.png" alt="" class="img-fluid" />
@@ -59,7 +59,7 @@
       <div class="header text-center"><img src="images/section2-title.png" class="img-fluid"></div>
       <div class="bg-flower bg-flower-60">
         <div class="container-content row g-3">
-            <div class="col-12 col-md-6">
+            <div class="col-md-12 col-lg-6">
                 <article class="tag-style">
                     <div class="tag-header">
                         <img src="images/tag-header.png" alt="โอกินาว่า" class="img-fluid" >
@@ -74,9 +74,9 @@
                     </div>
                 </article>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-md-12 col-lg-6">
                 <div class="paper-style position-relative">
-                  <div class="d-flex ">
+                  <div class="d-flex justify-content-center">
                     <div class="paper-left"></div>
                     <div class="paper-content" aria-label="Okinawa Flower Festivals">
                         <div class="header-image">
@@ -110,7 +110,7 @@
                             <img src="images/Higashi-Village-Azalea-Festival.png" 
                                 alt="Higashi Village Azalea Festival in Okinawa" 
                                 class="festival-img">
-                            <div class="d-flex justify-content-between title">
+                            <div class="d-flex justify-content-between title gap-1">
                               <h2>Higashi Village Azalea Festival</h2>
                               <div class="footer-actions">
                                 <a href="https://visitokinawajapan.com/discover/events/higashi-village-azalea-festival/" class="btn-share btn-pink" title="Higashi Village Azalea Festival" target="_blank"></a>
@@ -126,7 +126,7 @@
                             <img src="images/Ie-Island-Lily-Festival.png" 
                                 alt="Ie Island Lily Festival in Okinawa" 
                                 class="festival-img">
-                            <div class="d-flex justify-content-between title">
+                            <div class="d-flex justify-content-between title gap-1">
                               <h2>Ie Island Lily Festival</h2>
                               <div class="footer-actions">
                                 <a href="https://visitokinawajapan.com/discover/events/ie-island-lily-festival/" class="btn-share btn-pink" title="Ie Island Lily Festival" target="_blank"></a>
@@ -145,7 +145,7 @@
             </div>
         </div>
       </div>
-      <img src="images/footer-section2.png" alt="" class="img-fluid" />
+      <img src="images/section2-footer.png" alt="" class="img-fluid" />
     </div>
   </section>
   
@@ -154,7 +154,7 @@
     <div class="">
       <div class="header text-center"><img src="images/section3-title.png" class="img-fluid"></div>
       <div class="bg-flower bg-flower-25">
-        <div class="container-content d-flex flex-column-reverse flex-md-row align-items-stretch">
+        <div class="container-content d-flex flex-column-reverse flex-lg-row align-items-stretch">
           <div class="col-12 col-md-6 d-flex flex-column pt-4">
             <div class="note-header"></div>
             <article class="note-style  d-flex flex-column justify-content-center flex-fill ">
@@ -170,14 +170,13 @@
               </div>
             </article>
           </div>
-
           <div class="col-12 col-md-6 d-flex">
             <article class="tag-style  flex-fill d-flex flex-column">
               <div class="tag-header">
                 <img src="images/okinawa-churaumi-aquarium-tag-head.png" alt="Okinawa Churaumi Aquarium" class="img-fluid">
               </div>
-              <div class="tag-content text-center flex-fill">
-                <div style="padding-left: 10px;padding-right: 15px">ท่องเที่ยวโอกินาว่าดินแดนแห่งท้องทะเลที่เต็มไปด้วยมนต์เสน่ห์และความทรงจำไม่รู้ลืม เริ่มต้นที่ <h3 class="highligh-text mb-0">Okinawa Churaumi Aquarium </h3> ที่คุณจะเพลิดเพลินไปกับโลกใต้ทะเลและพบกับฉลามวาฬในตู้ปลาขนาดยักษ์ระดับโลก </div>
+              <div class="tag-content text-center flex-fill" id="tag-content-1">
+                <div class="px-2">ท่องเที่ยวโอกินาว่าดินแดนแห่งท้องทะเลที่เต็มไปด้วยมนต์เสน่ห์และความทรงจำไม่รู้ลืม เริ่มต้นที่ <h3 class="highligh-text mb-0">Okinawa Churaumi Aquarium </h3> ที่คุณจะเพลิดเพลินไปกับโลกใต้ทะเลและพบกับฉลามวาฬในตู้ปลาขนาดยักษ์ระดับโลก </div>
               </div>
               <div class="tag-footer">
                 <img src="images/okinawa-churaumi-aquarium-tag-footer.png" alt="Okinawa Churaumi Aquarium" class="img-fluid">
@@ -185,7 +184,8 @@
             </article>
           </div>
         </div><!--container-content-->
-        <div class="container-content d-flex flex-column-reverse flex-md-row align-items-stretch">
+        <div class="divide d-md-block d-lg-none"></div>
+        <div class="container-content d-flex flex-column-reverse flex-lg-row align-items-stretch">
           <div class="col-12 col-md-6 d-flex flex-column pt-4">
             <div class="note-header"></div>
             <article class="note-style  d-flex flex-column justify-content-center flex-fill ">
@@ -218,7 +218,8 @@
             </article>
           </div>
         </div><!--container-content-->
-        <div class="container-content d-flex flex-column-reverse flex-md-row align-items-stretch">
+        <div class="divide d-md-block d-lg-none"></div>
+        <div class="container-content d-flex flex-column-reverse flex-lg-row align-items-stretch">
           <div class="col-12 col-md-6 d-flex flex-column pt-4">
             <div class="note-header"></div>
             <article class="note-style  d-flex flex-column justify-content-center flex-fill ">
@@ -252,8 +253,8 @@
           </div>
           
         </div><!--container-content-->
-
-        <div class="container-content d-flex flex-column-reverse flex-md-row align-items-stretch">
+        <div class="divide d-md-block d-lg-none"></div>
+        <div class="container-content d-flex flex-column-reverse flex-lg-row align-items-stretch">
           <div class="col-12 col-md-6 d-flex flex-column pt-4">
             <div class="note-header"></div>
             <article class="note-style d-flex flex-column justify-content-center flex-fill ">
@@ -267,13 +268,13 @@
             <div class="note-header"></div>
             <article class="note-style d-flex flex-column justify-content-center flex-fill ">
               <div class="note-content text-center">
-                <img src="images/teamlab.png" alt="Okinawa teamlab">
+                <img src="images/teamlab.png" alt="TeamLab Future Park Okinawa">
               </div>
               <div class="d-flex justify-content-between title">
                 <h2>TeamLab★Future Park Okinawa</h2>
                 <div class="footer-actions">
-                  <a href="https://www.teamlab.art/e/futurepark-okinawa/" class="btn-share btn-green" target="_blank"></a>
-                  <a href="https://maps.app.goo.gl/pMvTRHz6xV678PxX8" class="btn-map btn-green" target="_blank"></a>
+                  <a href="https://www.teamlab.art/e/futurepark-okinawa/" class="btn-share btn-green" target="_blank" title="Future Park Okinawa"></a>
+                  <a href="https://maps.app.goo.gl/pMvTRHz6xV678PxX8" class="btn-map btn-green" target="_blank" title="Future Park Okinawa"></a>
                 </div>
               </div>
             </article>
@@ -290,8 +291,8 @@
     <div class="">
       <div class="header text-center"><img src="images/section4-title.png" class="img-fluid"></div>
       <div class="bg-flower bg-flower-25">
-        <div class="container-content row g-3 d-flex justify-content-between align-items-center">
-            <div class="col-12 col-md-6">
+        <div class="container-content row g-3 d-flex flex-column-reverse flex-lg-row justify-content-between align-items-center">
+            <div class="col-12 col-lg-6">
                 <div class="paper-style position-relative">
                   <div class="d-flex ">
                     <div class="paper-left"></div>
@@ -329,21 +330,21 @@
                           <div class="d-flex justify-content-between title">
                             <h2>Pork Tamago Onigiri</h2>
                             <div class="footer-actions">
-                              <a href="https://visitokinawajapan.com/travel-inspiration/must-try-okinawa-street-foods/" class="btn-share btn-pink" title="Pork Tamago Onigiri" target="_blank"></a>
+                              <a href="https://visitokinawajapan.com/travel-inspiration/must-try-okinawa-street-foods/" class="btn-share btn-pink" title="Pork Tamago Onigiri" target="_blank" title="Pork Tamago Onigiri"></a>
                               <a href="https://maps.app.goo.gl/q5TfmoMTXgukNJZj9" class="btn-map btn-pink" title="Pork Tamago Onigiri" target="_blank"></a>
                             </div>
                           </div>
                         </div>
                         <div class="d-flex justify-content-between">
                           <div class="festival-card small-card ">
-                            <img src="images/Tempura.png" 
-                                alt="Tempura" 
+                            <img src="images/okinawa-tempura.png" 
+                                alt="Okinawa Tempura" 
                                 class="festival-img">
                             <div class="d-flex justify-content-between title">
                               <h2>Tempura</h2>
                               <div class="footer-actions">
-                                <a href="https://visitokinawajapan.com/travel-inspiration/must-try-okinawa-street-foods/" class="btn-share btn-pink" title="Tempura" target="_blank"></a>
-                                <a href="https://maps.app.goo.gl/nJqm3dn62eG621BK8" class="btn-map btn-pink" title="Tempura" target="_blank"></a>
+                                <a href="https://visitokinawajapan.com/travel-inspiration/must-try-okinawa-street-foods/" class="btn-share btn-pink" title="Okinawa Tempura" target="_blank"></a>
+                                <a href="https://maps.app.goo.gl/nJqm3dn62eG621BK8" class="btn-map btn-pink" title="Okinawa Tempura" target="_blank"></a>
                               </div>
                             </div>
                           </div><!--festival-card-->
@@ -369,7 +370,7 @@
                   
                 </div><!--paper-style-->
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <article class="tag-style">
                     <div class="tag-header">
                         <img src="images/tag-header-food.png" alt="โอกินาว่า" class="img-fluid" >
@@ -394,10 +395,10 @@
     <div class="">
       <div class="header text-center"><img src="images/section5-title.png" class="img-fluid"></div>
       <div class="bg-flower bg-flower-60">
-        <div class="container-fluid">
+        <div class="container">
           <!-- Day 1 -->
           <div class="row d-flex justify-content-center align-items-center mt-5">
-            <div class="col-12 col-md-5 card-wrapper">
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="text-center card-header"><img src="images/trip-day1.png" class="" alt="Day one"></div>
               <div class="card border border-5 border-green overflow-hidden">
                 <img src="images/trip-3.00.png" class="card-img-top" alt="flight">
@@ -413,24 +414,27 @@
               </div><!--card-->
               <div class="text-center card-footer"></div>
             </div>
-            <div class="col-12 col-md-2 road-horizontal"></div>
-            <div class="col-12 col-md-5 card-wrapper">
+            <div class="col-12 col-md-12 col-lg-2 road-horizontal"></div>
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="text-center card-header"></div>
               <div class="card">
-                <img src="images/trip-4.00.png" class="card-img-top" alt="Train Monorail">
-                <div class="card-body">
+                <img src="images/monorail.png" class="card-img-top" alt="Train Monorail">
+                <div class="card-body position-relative">
+                  <div class="position-absolute" style="right: 10px;top: -80px;"><img src="images/monorail-train-ticket.png" alt="Monorail Ticket"></div>
                   <h2 class="card-title">4:00 PM</h2>
                   <p>เดินทางสู่โรงแรมด้วย Monorail</p>
+                  
                 </div>
+                
               </div><!--card-->
               <div class="text-center card-footer"><div class="road-verticle"></div></div>
             </div>
           </div>
          
-          <div class="row d-flex flex-md-row justify-content-center align-items-center flex-column-reverse">
-            <div class="col-12 col-md-5 card-wrapper">
+          <div class="row d-flex flex-lg-row justify-content-center align-items-center flex-column-reverse">
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="card">
-                <img src="images/trip8.00.png" class="card-img-top" alt="...">
+                <img src="images/kokusai-street.png" class="card-img-top" alt="Kokusai Street">
                 <div class="btn-group ">
                   <a href="https://naha-kokusaidori.okinawa/en/" class="btn btn-share btn-orange" title="Kokusai Street" target="_blank"></a>
                   <a href="https://maps.app.goo.gl/6B4uxeYuTNpWvj3Z6" class="btn btn-map btn-orange" title="Kokusai Street" target="_blank"></a>
@@ -442,17 +446,17 @@
               </div><!--card-->
               <div class="text-center card-footer"><div class="road-verticle"></div></div>
             </div>
-            <div class="col-12 col-md-2 road-horizontal"></div>
-            <div class="col-12 col-md-5 card-wrapper">
+            <div class="col-12 col-md-12 col-lg-2 road-horizontal"></div>
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="card">
-                 <img src="images/trip-6.00.png" class="card-img-top" alt="...">
+                 <img src="images/DFS-galleria-and-TeamLab-Future-Park-Okinawa.png" class="card-img-top" alt="DFS galleria and TeamLab★Future Park Okinawa">
                 <div class="d-flex">
-                  <div class="btn-group col">
+                  <div class="btn-group col-6">
                     <a href="https://visitokinawajapan.com/plan-your-trip/useful-information/
 " title="DFS galleria" class="btn btn-share btn-pink" target="_blank"></a>
                     <a href="https://maps.app.goo.gl/9Aaqdic6AM5d9EYb8" title="DFS galleria" class="btn btn-map btn-pink" target="_blank"></a>
                   </div>
-                  <div class="btn-group col">
+                  <div class="btn-group col-6">
                     <a href="https://www.teamlab.art/jp/e/futurepark-okinawa/" title="TeamLab★Future Park Okinawa" class="btn btn-share btn-green" target="_blank"></a>
                     <a href="https://maps.app.goo.gl/9Aaqdic6AM5d9EYb8" title="TeamLab★Future Park Okinawa" class="btn btn-map btn-green" target="_blank"></a>
                   </div>
@@ -469,7 +473,7 @@
          
            <!-- Day 2 -->
           <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-12 col-md-5 card-wrapper">
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="text-center card-header">
                 <img src="images/trip-day2.png" class="" alt="Day two"></div>
               <div class="card">
@@ -487,11 +491,11 @@
               </div><!--card-->
               <div class="text-center card-footer"></div>
             </div>
-            <div class="col-12 col-md-2 road-horizontal"></div>
-            <div class="col-12 col-md-5 card-wrapper">
+            <div class="col-12 col-md-12 col-lg-2 road-horizontal"></div>
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="text-center card-header"></div>
               <div class="card">
-                <img src="images/trip-day2-kouri-island.png" class="card-img-top" alt="Kouri Island">
+                <img src="images/kouri-island.png" class="card-img-top" alt="Kouri Island">
                 <div class="btn-group ">
                   <a href="https://visitokinawajapan.com/destinations/okinawa-main-island/northern-okinawa-main-island/kouri-island/
 " class="btn btn-share btn-blue" title="Kouri Island" target="_blank"></a>
@@ -507,8 +511,8 @@
             </div>
           </div>
          
-          <div class="row d-flex flex-md-row justify-content-center align-items-center flex-column-reverse">
-            <div class="col-12 col-md-5 card-wrapper">
+          <div class="row d-flex flex-lg-row justify-content-center align-items-center flex-column-reverse">
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="card">
                 <img src="images/trip-junglia-okinawa.png" class="card-img-top" alt="Junglia Okinawa">
                 <div class="btn-group ">
@@ -518,13 +522,14 @@
                 </div>
                 <div class="card-body">
                   <h2 class="card-title">1:30 PM</h2>
-                  <p>Junglia Okinawa</p>
+                  <p class="mb-0">Junglia Okinawa</p>
+                  <p> เพลิดเพลินกับสวนสนุกแห่งใหม่</p>
                 </div>
               </div><!--card-->
                <div class="text-center card-footer"><div class="road-verticle"></div></div>
             </div>
-            <div class="col-12 col-md-2 road-horizontal"></div>
-            <div class="col-12 col-md-5 card-wrapper">
+            <div class="col-12 col-md-12 col-lg-2 road-horizontal"></div>
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="card">
                  <img src="images/trip-parlor-kuriyamaya.png" class="card-img-top" alt="Parlor Kuriyamaya">
                 <div class="btn-group">
@@ -542,7 +547,7 @@
 
            <!-- Day 3 -->
           <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-12 col-md-5 card-wrapper">
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="text-center card-header"><img src="images/trip-day3.png" class="" alt="Day three"></div>
               <div class="card">
                 <img src="images/trip-okinawa-churaumi-aquarium.png" class="card-img-top" alt="Okinawa Churaumi Aquarium">
@@ -559,16 +564,16 @@
               </div><!--card-->
               <div class="text-center card-footer"></div>
             </div>
-            <div class="col-12 col-md-2 road-horizontal"></div>
-            <div class="col-12 col-md-5 card-wrapper">
+            <div class="col-12 col-md-12 col-lg-2 road-horizontal"></div>
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="text-center card-header"></div>
               <div class="card">
-                <img src="images/trip-Manzamo.png" class="card-img-top" alt="Manzamo">
+                <img src="images/manzamo-cape.png" class="card-img-top" alt="Manza Cape">
                 <div class="btn-group ">
                   <a href="https://www-vill-onna-okinawa-jp-e.athp.transer.com/about/information/1484719566/1484720229/
-" class="btn btn-share btn-blue" title="Manzamo" target="_blank"></a>
+" class="btn btn-share btn-blue" title="Manza Cape" target="_blank"></a>
                   <a href="https://maps.app.goo.gl/nCQwvZnj9DnrjVtu6
-" class="btn btn-map btn-blue" title="Manzamo" target="_blank"></a>
+" class="btn btn-map btn-blue" title="Manza Cape" target="_blank"></a>
                 </div>
                 <div class="card-body">
                   <h2 class="card-title">12:00 PM</h2>
@@ -579,8 +584,8 @@
             </div>
           </div>
          
-          <div class="row d-flex flex-md-row justify-content-center align-items-center flex-column-reverse">
-            <div class="col-12 col-md-5 card-wrapper">
+          <div class="row d-flex flex-lg-row justify-content-center align-items-center flex-column-reverse">
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="card">
                 <img src="images/trip-Yachimun-no-Sato.png" class="card-img-top" alt="Yachimun no Sato">
                 <div class="btn-group ">
@@ -594,8 +599,8 @@
               </div><!--card-->
               <div class="text-center card-footer"><div class="road-verticle"></div></div>
             </div>
-            <div class="col-12 col-md-2 road-horizontal"></div>
-            <div class="col-12 col-md-5 card-wrapper">
+            <div class="col-12 col-md-12 col-lg-2 road-horizontal"></div>
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="card">
                  <img src="images/trip-Beniino-Tart-Experience.png" class="card-img-top" alt="Beniino Tart Experience">
                 <div class="btn-group">
@@ -611,7 +616,7 @@
             </div>
           </div>
           <div class="row d-flex flex-md-row justify-content-center align-items-center">
-            <div class="col-12 col-md-5 card-wrapper">
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="card">
                 <img src="images/trip-BANTA-CAFE-by-Hoshino-Resorts.png" class="card-img-top" alt="BANTA CAFE by Hoshino Resorts">
                 <div class="btn-group ">
@@ -625,13 +630,13 @@
               </div><!--card-->
               <div class="text-center card-footer"></div>
             </div>
-            <div class="col-12 col-md-2 road-horizontal"></div>
-            <div class="col-12 col-md-5 card-wrapper">
+            <div class="col-12 col-md-12 col-lg-2 road-horizontal"></div>
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="card">
-                 <img src="images/trip-American-Village.png" class="card-img-top" alt="American Village">
+                 <img src="images/Mihama-American-Village.png" class="card-img-top" alt="Mihama American Village">
                 <div class="btn-group">
-                  <a href="https://www.okinawa-americanvillage.com/en/" title="American Village" class="btn btn-share btn-green" target="_blank"></a>
-                  <a href="https://maps.app.goo.gl/AosyvdNN5jxHPKoq6" title="American Village" class="btn btn-map btn-green" target="_blank"></a>
+                  <a href="https://www.okinawa-americanvillage.com/en/" title="Mihama American Village" class="btn btn-share btn-green" target="_blank"></a>
+                  <a href="https://maps.app.goo.gl/AosyvdNN5jxHPKoq6" title="Mihama American Village" class="btn btn-map btn-green" target="_blank"></a>
                 </div>
                 <div class="card-body">
                   <h2 class="card-title">6:00 PM</h2>
@@ -643,8 +648,8 @@
           </div>
 
            <!-- Day 4 -->
-          <div class="row d-flex flex-md-row justify-content-center align-items-center flex-column-reverse">
-            <div class="col-12 col-md-5 card-wrapper">
+          <div class="row d-flex flex-lg-row justify-content-center align-items-center flex-column-reverse">
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="text-center card-header"></div>
               <div class="card">
                 <img src="images/trip-car-return.png" class="card-img-top" alt="คืนรถเช่าที่จุดคืนรถใกล้สนามบิน">
@@ -657,8 +662,8 @@
               </div><!--card-->
               <div class="text-center card-footer"><div class="road-verticle"></div></div>
             </div>
-            <div class="col-12 col-md-2 road-horizontal"></div>
-            <div class="col-12 col-md-5 card-wrapper">
+            <div class="col-12 col-md-12 col-lg-2 road-horizontal"></div>
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="text-center card-header"><img src="images/trip-day4.png" class="" alt="Day three"></div>
               <div class="card">
                 <img src="images/trip-Umikachi-Turrace.png" class="card-img-top" alt="Umikachi Turrace">
@@ -676,7 +681,7 @@
           </div>
          
           <div class="row justify-content-center align-items-center">
-            <div class="col-12 col-md-5 card-wrapper h-auto">
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper h-auto">
               <div class="card h-auto">
                 <img src="images/trip-flight.png" class="card-img-top" alt="Yachimun no Sato">
                 <div class="card-body d-flex justify-content-between pb-0 h-auto">
@@ -690,8 +695,8 @@
                 </div>
               </div><!--card-->
             </div>
-            <div class="col-12 col-md-2 road-horizontal" style="opacity: 0;"></div>
-            <div class="col-12 col-md-5 card-wrapper h-auto">
+            <div class="col-12 col-md-12 col-lg-2 road-horizontal" style="opacity: 0;"></div>
+            <div class="col-12 col-md-12 col-lg-5 card-wrapper h-auto d-md-none d-lg-block">
               <div class="card h-auto w-auto">
                  <img src="images/trip-photo.png" class="m-auto" width="350px" alt="Beniino Tart Experience">
               </div><!--card-->
@@ -726,7 +731,7 @@
               </div>
             </div>
             
-            <div class="col-12 col-md-4">
+            <div class="col-6 col-md-4">
               <div class="nightlife-card">
                   <img src="images/SEA-SIDE-DRIVEIN.png" alt="SEA SIDE DRIVEIN" class="img-fluid">
                   <div class="d-flex justify-content-between title">
@@ -738,7 +743,7 @@
                   </div>
               </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-6 col-md-4">
               <div class="nightlife-card">
                   <img src="images/Kokusai-Dori-Yataimura.png" alt="Kokusai Dori Yataimura" class="img-fluid">
                   <div class="d-flex justify-content-between title">
@@ -764,7 +769,7 @@
       <div class="bg-note position-relative">
         <div class="row g-0">
           <!-- Outdoor side -->
-            <div class="col-12 col-md-6 bg-pink text-center">
+            <div class="col-12 col-md-12 col-lg-6 bg-pink text-center">
               <img src="images/outdoor-title.png" class="img-fluid mb-4">
               <div class="card-activities">
                 <div class="d-flex flex-row card-content">
@@ -786,7 +791,7 @@
                     <h2 class="highligh-text">ดำน้ำแบบ Skindiving และ ถ่ายรูปที่ระลึก</h2>
                     <p>ดำน้ำแบบไม่ต้องใส่เสื้อชูชีพ และ ถังออกซิเจน ทำให้ได้ยินเสียงของธรรมชาติอย่างชัดเจนและรู้สึกอยู่ใกล้ชิดกับทะเลมากยิ่งขึ้น</p>
                   </div>
-                  <div class="card-img"><img src="images/Skindiving.png" alt="ดำน้ำแบบ Skindiving และ ถ่ายรูปที่ระลึก"></div>
+                  <div class="card-img"><img src="images/Okinawa-Skindiving.png" alt="Okinawa Skindiving "></div>
                 </div>
                 <div class="btn-group d-flex">
                   <a href="https://visitokinawajapan.com/discover/dive-sites-okinawa/" title="ดำน้ำแบบ Skindiving และ ถ่ายรูปที่ระลึก" class="btn btn-share btn-green" target="_blank"></a>
@@ -799,16 +804,16 @@
                     <h2 class="highligh-text">ตกปลากลางทะเล</h2>
                     <p>เปิดประสบการณ์แบบชาวเรือ ไปตกปลาหลายหลายชนิดที่ไม่เหมือนที่ไหนในญี่ปุ่น พร้อมนำกลับมาให้ร้านอาหารปรุงให้ทานได้อีกด้วย</p>
                   </div>
-                  <div class="card-img"><img src="images/fishing.png" alt="ตกปลากลางทะเล"></div>
+                  <div class="card-img"><img src="images/okinawa-fishing.png" alt="Okinawa Fishing"></div>
                 </div>
                 <div class="btn-group d-flex">
-                  <a href="https://www.okinawa-fishing.jp/english/" title="ตกปลากลางทะเล" class="btn btn-share btn-green" target="_blank"></a>
-                  <a href="https://maps.app.goo.gl/PUYXax2Mydst5bEe7" title="ตกปลากลางทะเล" class="btn btn-map btn-green" target="_blank"></a>
+                  <a href="https://www.okinawa-fishing.jp/english/" title="Okinawa Fishing" class="btn btn-share btn-green" target="_blank"></a>
+                  <a href="https://maps.app.goo.gl/PUYXax2Mydst5bEe7" title="Okinawa Fishing" class="btn btn-map btn-green" target="_blank"></a>
                 </div>
               </div>
             </div>
             <!-- indoor side -->
-            <div class="col-12 col-md-6 bg-blue text-center">
+            <div class="col-12 col-md-12 col-lg-6 bg-blue text-center">
               <img src="images/outdoor-title2.png" class="img-fluid mb-4">
               <div class="card-activities">
                 <div class="d-flex flex-row card-content">
@@ -817,18 +822,18 @@
                     <h2 class="highligh-text">Shuri Ryusen</h2>
                     <p>สร้างผลงานชิ้นเดียวในโลกด้วยลวดลายงดงามจากปะการังเสื่อมสภาพที่เก็บไว้ตั้งแต่อดีต (ปัจจุบันห้ามเก็บจากทะเล)</p>
                   </div>
-                  <div class="card-img"><img src="images/Shuri-Ryusen.png" alt="เพ้นต์ผ้าปะการังที่ Shuri Ryusen"></div>
+                  <div class="card-img"><img src="images/Shuri-Ryusen.png" alt="Shuri Ryusen"></div>
                 </div>
                 <div class="btn-group d-flex">
-                  <a href="https://visitokinawajapan.com/travel-inspiration/multicolor-dyeing-coral-fossils/" title="เพ้นต์ผ้าปะการังที่ Shuri Ryusen" class="btn btn-share btn-green" target="_blank"></a>
-                  <a href="https://maps.app.goo.gl/eJfXo6EemCFnfPue8" title="เพ้นต์ผ้าปะการังที่ Shuri Ryusen" class="btn btn-map btn-green" target="_blank"></a>
+                  <a href="https://visitokinawajapan.com/travel-inspiration/multicolor-dyeing-coral-fossils/" title="เพ้นต์ผ้าปะการัง Shuri Ryusen" class="btn btn-share btn-green" target="_blank"></a>
+                  <a href="https://maps.app.goo.gl/eJfXo6EemCFnfPue8" title="เพ้นต์ผ้าปะการัง Shuri Ryusen" class="btn btn-map btn-green" target="_blank"></a>
                 </div>
               </div>
               <div class="card-activities">
                 <div class="d-flex flex-row card-content">
                   <div class="card-text pb-2">
                     <h2 class="highligh-text">ชงชาฟองฟูแบบโอกินาว่า Buku Buku Cha</h2>
-                    <p style="    letter-spacing: -1.45px;">ชาดั้งเดิมของโอกินาว่า ที่สืบทอดมาตั้งแต่สมัยอาณาจักรริวกิว ชงด้วยวิธีตีจนเกิดฟองฟู ก่อนจะลิ้มรสคู่กับขนมพื้นเมืองของโอกินาว่าอย่างกลมกลืน</p>
+                    <p style="letter-spacing: -1.45px;">ชาดั้งเดิมของโอกินาว่า ที่สืบทอดมาตั้งแต่สมัยอาณาจักรริวกิว ชงด้วยวิธีตีจนเกิดฟองฟู ก่อนจะลิ้มรสคู่กับขนมพื้นเมืองของโอกินาว่าอย่างกลมกลืน</p>
                   </div>
                   <div class="card-img"><img src="images/Buku-Buku-Cha.png" alt="ชงชาฟองฟูแบบโอกินาว่า Buku Buku Cha"></div>
                 </div>
@@ -843,16 +848,16 @@
                     <h2 class="highligh-text">ทำทาร์ตมันม่วงของฝากยอดฮิตด้วยตัวเอง </h2>
                     <p>กิจกรรมสนุก ๆ ไปลองทำขนมของฝากยอดฮิตของโอกินาว่า จากนั้นก็เลือกซื้อของฝากและทานเบเกอรี่สดใหม่ ระหว่างรอขนมอบเสร็จ</p>
                   </div>
-                  <div class="card-img"><img src="images/tart.png" alt="ทำทาร์ตมันม่วงของฝากยอดฮิตด้วยตัวเอง"></div>
+                  <div class="card-img"><img src="images/Beniimo-Tart-Experience.png" alt="Beniimo Tart Experience"></div>
                 </div>
                 <div class="btn-group d-flex">
-                  <a href="https://www.okashigoten.co.jp/hm/reserve/" title="ทำทาร์ตมันม่วงของฝากยอดฮิตด้วยตัวเอง" class="btn btn-share btn-green" target="_blank"></a>
-                  <a href="https://maps.app.goo.gl/QsxidEjhcT3u8rqB6" title="ทำทาร์ตมันม่วงของฝากยอดฮิตด้วยตัวเอง" class="btn btn-map btn-green" target="_blank"></a>
+                  <a href="https://www.okashigoten.co.jp/hm/reserve/" title="Beniimo Tart Experience" class="btn btn-share btn-green" target="_blank"></a>
+                  <a href="https://maps.app.goo.gl/QsxidEjhcT3u8rqB6" title="Beniimo Tart Experience" class="btn btn-map btn-green" target="_blank"></a>
                 </div>
               </div>
             </div>
         </div>
-        <div class="position-absolute" style="bottom: -1px;"><img src="images/footer-activities.png" class="img-fluid"></div>
+        <div class="position-absolute d-flex" style="bottom: -1px;"><img src="images/footer-activities.png" class="img-fluid"></div>
       </div>
       
     </div>
@@ -862,8 +867,8 @@
     <div class="">
       <div class="header text-center"><img src="images/section8-title.png" class="img-fluid"></div>
       <div class="bg-flower bg-flower-60">
-        <div class="container-content row d-flex justify-content-evenly">
-          <div class="col-12 col-md-4 col-lg-2">
+        <div class="container-content row d-flex justify-content-evenly g-0">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="souvenir-card">
                 <div class="d-flex justify-content-center position-relative rounded overflow-hidden">
                   <img src="images/Orion-Beer-T-Shirt.png" alt="Orion Beer T-Shirt" class="img-fluid">
@@ -872,7 +877,7 @@
                 <h2 class="card-title">เสื้อยืดลาย Orion Beer</h2>
             </div>
           </div>
-          <div class="col-12 col-md-4 col-lg-2">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="souvenir-card">
                 <div class="d-flex justify-content-center position-relative rounded overflow-hidden">
                   <img src="images/OKINAWA-mint-can.png" alt="OKINAWA mint can" class="img-fluid">
@@ -881,7 +886,7 @@
                 <h2 class="card-title">ลูกอมมินต์ในกล่องเหล็กลาย OKINAWA</h2>
             </div>
           </div>
-          <div class="col-12 col-md-4 col-lg-2">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="souvenir-card">
                 <div class="d-flex justify-content-center position-relative rounded overflow-hidden">
                   <img src="images/Beniimo-Tart.png" alt="Beniimo Tart" class="img-fluid">
@@ -891,7 +896,7 @@
             </div>
           </div>
           
-          <div class="col-12 col-md-4 col-lg-2">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="souvenir-card">
                 <div class="d-flex justify-content-center position-relative rounded overflow-hidden">
                   <img src="images/KARIYUSHI-wear.png" alt="KARIYUSHI wear" class="img-fluid">
@@ -900,7 +905,7 @@
                 <h2 class="card-title">เสื้อโอกินาว่า KARIYUSHI wear</h2>
             </div>
           </div>
-          <div class="col-12 col-md-4 col-lg-2">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="souvenir-card">
                 <div class="d-flex justify-content-center position-relative rounded overflow-hidden">
                   <img src="images/Hotaru-Glass.png" alt="Hotaru Glass" class="img-fluid">
@@ -909,7 +914,7 @@
                 <h2 class="card-title">เครื่องประดับ Hotaru Glass</h2>
             </div>
           </div>
-          <div class="col-12 col-md-4 col-lg-2">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="souvenir-card">
                 <div class="d-flex justify-content-center position-relative rounded overflow-hidden">
                   <img src="images/Yachimun.png" alt="Yachimun" class="img-fluid">
@@ -924,33 +929,179 @@
     </div>
   </section>
 <!-- 9Sections brochures -->
-  <section id="brochures" class=" content-wrapper">
+  <section id="brochures">
     <div class="">
-      <div class="header text-center"><img src="images/section9-title.png" class="img-fluid"></div>
+      <div class="bg-top"></div>
+      <div class="header text-center"><img src="images/section9-title.png" alt="brochures" class="img-fluid"></div>
       <div class="">
-        <div class="container-content row g-3">
-            
+        <div class="container-content row">
+           <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+              <!-- Card 1 -->
+              <div class="carousel-card">
+                <a href="https://travel-brochures.okinawastory.jp/en/archives/brochure/hidden-gem-okinawa-oasis-of-japan" title="HIDDEN GEM Okinawa" target="_blank">
+                  <img src="images/Okinawa-hidden-gem.png" alt="HIDDEN GEM Okinawa" class="img-fluid">
+                <p>HIDDEN GEM Okinawa</p>
+                </a>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="carousel-card">
+                <a href="https://travel-brochures.okinawastory.jp/en/archives/brochure/okinawa_resort_island_thai" title="โอกินาว่า เกาะแห่งรีสอร์ท" target="_blank">
+                  <img src="images/Okinawa-resort-island.png" alt="Okinawa Island Resorts">
+                <p>โอกินาว่า เกาะแห่งรีสอร์ท</p>
+                </a>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="carousel-card">
+                <a href="https://travel-brochures.okinawastory.jp/en/archives/brochure/okinawa-guide-map-thai" title="แผนที่นำทาง โอกินาว่า" target="_blank">
+                  <img src="images/Okinawa-travel-map.png" alt="แผนที่นำทาง โอกินาว่า">
+                  <p>แผนที่นำทาง โอกินาว่า</p>
+                </a>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="carousel-card">
+                <a href="https://travel-brochures.okinawastory.jp/en/archives/brochure/%e0%b8%84%e0%b8%b9%e0%b9%88%e0%b8%a1%e0%b8%b7%e0%b8%ad%e0%b8%97%e0%b9%88%e0%b8%ad%e0%b8%87%e0%b9%80%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a2%e0%b8%a7%e0%b9%82%e0%b8%ad%e0%b8%81%e0%b8%b4%e0%b8%99%e0%b8%b2" title="คู่มือท่องเที่ยวโอกินาว่า เพื่อความปลอดภัยและสบายใจ (2019 Edition)" target="_blank">
+                <img src="images/Okinawa-tourists-2019.png" alt="คู่มือท่องเที่ยวโอกินาว่า เพื่อความปลอดภัยและสบายใจ (2019 Edition)">
+                <p>คู่มือท่องเที่ยวโอกินาว่า เพื่อความปลอดภัยและสบายใจ (2019 Edition)</p>
+                </a>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="carousel-card">
+                <a href="https://travel-brochures.okinawastory.jp/en/archives/brochure/%e0%b8%82%e0%b9%89%e0%b8%ad%e0%b8%88%e0%b8%b3%e0%b8%81%e0%b8%b1%e0%b8%94%e0%b9%83%e0%b8%99%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b8%b7%e0%b8%ad%e0%b8%aa%e0%b8%b1%e0%b8%a1%e0%b8%a0%e0%b8%b2%e0%b8%a3" title="ข้อจำกัดในการถือสัมภาระขึ้นเครื่องบินโดยสาร" target="_blank">
+                <img src="images/Okinawa-flight-instruction.png" alt="ข้อจำกัดในการถือสัมภาระขึ้นเครื่องบินโดยสาร">
+                <p>ข้อจำกัดในการถือสัมภาระขึ้นเครื่องบินโดยสาร</p>
+                </a>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="carousel-card">
+                <a href="https://travel-brochures.okinawastory.jp/en/archives/brochure/dive-in-okinawa-ocean-lovers-paradise" title="DIVE IN OKINAWA! Ocean Lovers’ Paradise" target="_blank">
+                <img src="images/Dive-in-Okinawa.png" alt="DIVE IN OKINAWA! Ocean Lovers’ Paradise">
+                <p>DIVE IN OKINAWA! Ocean Lovers’ Paradise</p>
+                </a>
+              </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="d-flex justify-content-center carousel-nav">
+              <button class="carousel-btn prev" id="prevBtn"><img src="images/ic-prev.png"></button>
+              <button class="carousel-btn next" id="nextBtn"><img src="images/ic-next.png"></button>
+            </div>
+          </div>
+
+          <script>
+            const track = document.getElementById('carouselTrack');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const cards = document.querySelectorAll('.carousel-card');
+            const cardWidth = cards[0].offsetWidth + 30; 
+            const visibleCards = 3; 
+            let index = 0;
+
+            function updateCarousel() {
+              track.style.transition = 'transform 0.5s ease';
+              track.style.transform = `translateX(-${index * cardWidth}px)`;
+            }
+
+            nextBtn.addEventListener('click', () => {
+              index++;
+              updateCarousel();
+
+              if (index > cards.length - visibleCards) {
+                setTimeout(() => {
+                  track.style.transition = 'none';
+                  index = 0;
+                  track.style.transform = `translateX(0px)`;
+                }, 500); 
+              }
+            });
+
+            prevBtn.addEventListener('click', () => {
+              index--;
+              updateCarousel();
+
+              if (index < 0) {
+                setTimeout(() => {
+                  track.style.transition = 'none';
+                  index = cards.length - visibleCards;
+                  track.style.transform = `translateX(-${index * cardWidth}px)`;
+                }, 500);
+              }
+            });
+          </script>
+
+  
+
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-4 border-top">
-    <div class="d-flex align-items-center">
-        <a class="navbar-brand fw-bold me-3" href="#home-content"><img src="images/okinawa-logo.png"></a>
-        <!-- Social Icons -->
-        <div class="d-flex">
-          <a href="https://www.facebook.com/visit.okinawa.th" target="_blank" class="me-2">
-            <img src="images/ic-facebook.png" alt="Facebook" width="42" class="" />
-          </a>
-          <a href="https://www.instagram.com/visitokinawajapanth/" target="_blank">
-            <img src="images/ic-instagram.png" alt="Instagram" width="42" class="" />
-          </a>
-        </div>
-      </div>
+  <footer class="text-center py-4">
+    <div class="container-content d-flex px-4">
+        <a class="navbar-brand fw-bold me-3" href="#home-content" title="Okinawa"><img src="images/OkinawaLogoBlack.png" alt="Okinawa Logo"></a>
+        <a href="https://www.facebook.com/visit.okinawa.th" target="_blank" class="me-2">
+          <img src="images/ic-facebook.png" alt="Facebook" width="42" class="" />
+        </a>
+        <a href="https://www.instagram.com/visitokinawajapanth/" target="_blank">
+          <img src="images/ic-instagram.png" alt="Instagram" width="42" class="" />
+        </a>
+        
+        <button id="backToTop" class="btn d-flex flex-column">
+          <img src="images/ic-top.png" class="img-fluid m-auto" width="60">
+          <span class="text-uppercase fw-bold mt-1"> Back to top </span>
+        </button>
+    </div>
   </footer>
+  
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+
+
+    // Close navbar when any nav-link is clicked
+    document.querySelectorAll('#navbarNav .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const navbarCollapse = document.querySelector('#navbarNav');
+        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+        if (bsCollapse) {
+          bsCollapse.hide();
+        }
+      });
+    });
+
+    // Optional: manage background overlay toggle
+    const navCollapse = document.getElementById('navbarNav');
+    navCollapse.addEventListener('show.bs.collapse', () => {
+      document.body.classList.add('nav-open');
+    });
+    navCollapse.addEventListener('hidden.bs.collapse', () => {
+      document.body.classList.remove('nav-open');
+    });
+</script>
+
+  
 </body>
 </html>

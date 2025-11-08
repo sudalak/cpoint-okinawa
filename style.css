@@ -38,15 +38,19 @@ section {
     height: 70px;
     margin-top: -38px;
 }
-section{
+section, footer{
     max-width: 1140px;
     margin: 0 auto;
 }
+
 .container-content{
     padding: 0;
     width: 100%;
     margin: auto;
     max-width: 1000px;
+}
+nav .container-content{
+    max-width: 1140px;
 }
 
 .navbar {
@@ -79,6 +83,9 @@ section{
 }
 #home{
     background-color: #1bbeff;
+}
+#home-content{
+    height: 70px;
 }
 .content-wrapper{
     position: relative;
@@ -240,6 +247,7 @@ section{
     padding-right: 30px;
     padding-left:30px ;
     margin: 0 auto;
+    width: 100%;
     max-width:440px ;
     min-height: 410px;
 }
@@ -281,7 +289,7 @@ section{
 }
 
 .card-wrapper{
-    width: 380px;
+    max-width: 380px;
 }
 .road-horizontal{
     content: url('./images/road-horizontal.png');
@@ -363,7 +371,7 @@ section{
     text-align: left;
 }
 .card-activities .card-text{
-    padding: 20px;
+    padding: 20px 20px 15px;
     color: #382a21;
 }
 .card-activities .card-text p{
@@ -372,6 +380,8 @@ section{
 }
 .card-activities .card-img{
     width: 185px;
+    display: flex;
+    flex: 1;
 }
 .card-activities .highligh-text{
     font-size: 18px;
@@ -428,8 +438,397 @@ section{
     justify-content: center;
     align-items: center;
 }
+#brochures{
+    background-image: url(images/brochure-bg.png);
+}
+#brochures .bg-top{
+    background-image: url(images/section9-top-bg.png);
+    height: 100px;
+    background-repeat: repeat-x;
+}
+#brochures .header{
+    position: relative;
+    top: auto;
+    margin: 60px auto 40px;
+}
+#brochures:after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 300px;
+    margin-top: -300px;
+    background-color: #ffea21;
+    border-bottom: 5px solid #ff87b6;
+}
+/* for slider */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.6s ease;
+    gap: 20px;
+}
+
+.carousel-card {
+    min-width: 205px;
+    text-align: left;
+    overflow: hidden;
+    /* margin: 0 15px; */
+    transition: transform 0.3s ease;
+}
+
+.carousel-card:hover {
+    transform: translateY(-5px);
+}
+
+.carousel-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.carousel-card a{
+    text-decoration: none;
+}
+.carousel-card p {
+    color: #382a21;
+    font-size: 18px;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+/* Navigation Buttons */
+.carousel-nav{
+    margin: 40px auto;
+    gap: 10px;
+}
+.carousel-btn {
+    width: 47px;
+    height: 47px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+
+}
+
+.carousel-btn:hover {
+    background-color: #ff88b6;
+}
+
+.carousel-btn.prev {
+    
+}
+
+.carousel-btn.next {
+    
+}
+#backToTop {
+  position: fixed;
+  bottom: 5px;
+  right: 0px;
+  z-index: 999;
+  display: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 10px;
+}
+footer {
+    background-image: url(images/brochure-bg.png);
+    height: 100px;
+}
+    .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active{
+        color: #fff;
+    }
+
+@media (max-width: 768px) {
+    .carousel-card {
+    min-width: 160px;
+    }
+    .carousel-card img {
+    height: 220px;
+    }
+    .carousel-btn.prev {
+    left: 40%;
+    }
+    .carousel-btn.next {
+    right: 40%;
+    }
+}
+
+
+@media (max-width: 991px){
+    #mainNav {
+        position: relative;
+    }
+    .navbar-toggler {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1100;
+        background: none;
+        border: none;
+        padding: 0;
+        box-shadow: none !important;
+    }
+
+    .navbar-collapse {
+        background-color: #66ccff;
+        position: fixed;
+        top: 85px;
+        right: 20px;
+        width: 300px;
+        max-width: 80%;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 1000;
+    }
+
+    .navbar-collapse.show {
+        transform: translateX(0);
+    }
+
+    .navbar-nav .nav-link{
+        
+        padding: 5px 20px 0;
+    }
+    .navbar-nav .nav-link:after{
+        content: "";
+        display: block;
+        border-bottom: 1px solid #d0f1fe;
+        padding-top: 10px;
+    }
+    .navbar-nav .nav-item:last-child .nav-link:after {
+        border: none;
+    }
+
+    .navbar-nav .nav-link.active {
+        background-color: #3399cc;
+    }
+
+    .navbar-toggler {
+        z-index: 1100;
+    }
+    body.nav-open::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 51, 102, 0.85);
+        z-index: 1;
+    }
+    
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    #home-content{
+        height: 0;
+    }
+    #attractions .container-content>[class^="col-"]{
+        margin: 15px auto;
+        padding: 0 !important;
+    }
+    #attractions .tag-content{
+        height: auto;
+    }
+    #attractions .divide{
+        background-image: url('./images/ic-devide.png');
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 60px;
+        margin: 55px auto;
+    }
+    #trip .col-12{
+        max-width: 100%;
+
+    }
+    #trip>.d-flex{
+        flex-direction: column;
+    }
+    #trip .card{
+        height: auto;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+    .road-horizontal, .road-verticle{
+        content: "";
+        background-image: url('./images/road-verticle.png');
+        height: 50px;
+        width: 30px;
+        margin: auto;
+    }
+    #trip .card-header, #trip .card-footer{
+        height: auto;
+    }
+    
+    #souvenirs .container-content{
+        max-width: 560px;
+        padding-bottom: 0;
+    }
+    #souvenirs .bg-flower:after {
+        margin-top: -150px;
+        height: 200px;
+    }
+    #souvenirs [class^="col-"]{
+        max-width: 175px;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .souvenir-card{
+        max-width: 175px;
+        
+    }
+    .souvenir-card img{
+        width: 100%;
+        height: 248px;
+    }
+    #activities [class^="col-"]{
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .card-activities .card-text{
+        width: 60%;
+    }
+    .card-activities .card-img{
+        width: 40%;
+    }
+
+
+}
+@media (max-width: 855px) {
+    
+}
 @media (max-width: 767.98px) {
-  .note-style{
-    padding: 20px 30px 30px;
-  }
+    .header{
+        padding: 0 20px;
+    }
+    .note-style{
+        padding: 20px 30px 30px;
+    }
+    .nightlife-card{
+        max-width: 100%;
+    }
+    .nightlife-card img{
+        width: 100%;
+        height: auto;   
+    }
+    .footer-actions{
+        gap: 0.15rem;
+    }
+  
+}
+@media (max-width: 575px){
+    
+    .bg-flower{
+        padding-top: 50px;
+    }
+    #seasons .paper-content{
+        margin: 0;
+        width: 90%;
+    }
+    #seasons .paper-content>.d-flex{
+        gap:10px
+    }
+    #seasons .festival-card {
+       
+    }
+    .paper-left{
+        width: 10%
+    }
+    
+    
+    .large-card {
+        /* max-width: 365px; */
+        width: 100%;
+    }
+    .small-card {
+        max-width: 100%;
+        width: 48%;
+    }
+    .container-content{
+        padding: 20px;
+    }
+    #activities [class^="col-"]{
+        padding:20px;
+    }
+    #attractions .container-content>[class^="col-"]{
+        padding: 0 20px !important;
+    }
+    #attractions .divide{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .content-wrapper{
+        padding-top: 170px;
+    }
+    .card-activities{
+        max-width: 455px;
+        width: 100%;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    .card-activities .card-img img{
+        max-width: initial;
+    }
+    #attractions .tag-content{
+        height: auto;
+        padding: 20px 30px;
+    }
+    #attractions #tag-content-1 {
+        padding: 20px 0;
+    
+    }  
+    .note-style{
+        width: 440px;
+        max-width: 100%;
+        min-height: auto;
+    } 
+}
+@media (max-width: 450px) {
+    .content-wrapper {
+        padding-top: 120px;
+    }
+    .container-content{
+        padding: 10px;
+    }
+    .large-card, #seasons .paper-content>.d-flex {
+        max-width: 300px;
+        margin: auto ;
+    }
+     #attractions .tag-content{
+        font-size: 18px;
+        padding: 20px;
+    }
+    
+}
+@media (max-width: 390px) {
+    .paper-content{
+        padding-right: 20px;
+    }
+    .large-card, #seasons .paper-content>.d-flex {
+        /* max-width: 290px; */
+    }
+    #trip .row{
+        padding: 0 20px;
+        margin-top: 10px !important;
+    }
+   
+}
+@media (max-width: 375px) {
+    .paper-content{
+        padding-right: 20px;
+    }
+    .large-card, #seasons .paper-content>.d-flex {
+        /* max-width: 250px; */
+    }
 }
