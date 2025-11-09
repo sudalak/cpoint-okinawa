@@ -809,6 +809,23 @@ footer {
         font-size: 18px;
         padding: 20px;
     }
+    .card-body{
+        height: auto;
+        min-height: 100px;
+        padding-bottom: 10px;
+    }
+    .card-body img {
+        max-width: 120px;
+    }
+    .card-body div:last-child {
+        margin-top: 0px !important;
+    }
+    .card-body .position-absolute{
+        top: -40px !important;
+    }
+    #activities .col-12>img{
+        margin-bottom: 0 !important;
+    }
     
 }
 @media (max-width: 390px) {
@@ -820,15 +837,46 @@ footer {
     }
     #trip .row{
         padding: 0 20px;
-        margin-top: 10px !important;
     }
    
 }
 @media (max-width: 375px) {
+    .content-wrapper {
+        padding-top: 80px;
+    }
+    .header{
+        top: 20px;
+    }
+    .tag-content{
+        padding: 30px 20px;
+    }
+    #attractions .tag-content{
+        font-size: 19px;
+        padding: 30px 15px;
+    }
+    #attractions #tag-content-1{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+     #attractions .container-content:nth-child(2) .col-12:last-child .tag-content{
+        padding: 30px 22px;
+    }
+     #seasons .col-md-12:first-child .tag-content{
+        padding: 20px 22px;
+    }
+    #localfood .tag-content{
+        font-size: 1.25rem;
+    }
     .paper-content{
         padding-right: 20px;
     }
     .large-card, #seasons .paper-content>.d-flex {
         /* max-width: 250px; */
+    }
+    .festival-card .title{
+        gap: 5px;
+    }
+    .footer-actions {
+        gap: 0.25rem;
     }
 }
