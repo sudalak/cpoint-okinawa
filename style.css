@@ -739,6 +739,9 @@ footer {
     #seasons .festival-card {
        
     }
+    .header{
+        padding: 0;
+    }
     .paper-left{
         width: 10%
     }
