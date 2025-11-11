@@ -531,14 +531,14 @@
             <div class="col-12 col-md-12 col-lg-2 road-horizontal"></div>
             <div class="col-12 col-md-12 col-lg-5 card-wrapper">
               <div class="card">
-                 <img src="images/trip-parlor-kuriyamaya.png" class="card-img-top" alt="Parlor Kuriyamaya">
+                 <img src="images/KouriOceanTower.png" class="card-img-top" alt="Kouri Ocean Tower">
                 <div class="btn-group">
-                  <a href="https://www.teamlab.art/jp/e/futurepark-okinawa/" title="Parlor Kuriyamaya" class="btn btn-share btn-pink" target="_blank"></a>
-                  <a href="https://maps.app.goo.gl/9Aaqdic6AM5d9EYb8" title="Parlor Kuriyamaya" class="btn btn-map btn-pink" target="_blank"></a>
+                  <a href="https://www.kouri-oceantower.com/english/" title="Kouri Ocean Tower" class="btn btn-share btn-pink" target="_blank"></a>
+                  <a href="https://maps.app.goo.gl/1iwwuqTzg3f2sfpo6" title="Kouri Ocean Tower" class="btn btn-map btn-pink" target="_blank"></a>
                 </div>
                 <div class="card-body">
-                  <h2 class="card-title">Parlor Kuriyamaya</h2>
-                  <p>ร้านเครื่องดื่มสุดน่ารักบนเกาะโคริที่ทั้งร้านเป็นสีชมพูและคิตตี้</p>
+                  <h2 class="card-title">Kouri Ocean Tower</h2>
+                  <p>ชมวิวความสวยงามของเกาะโคริแบบ 360 องศา</p>
                 </div>
               </div><!--card-->
               <div class="text-center card-footer"></div>
@@ -998,8 +998,8 @@
             const prevBtn = document.getElementById('prevBtn');
             const nextBtn = document.getElementById('nextBtn');
             const cards = document.querySelectorAll('.carousel-card');
-            const cardWidth = cards[0].offsetWidth + 30; 
-            const visibleCards = 3; 
+            const cardWidth = cards[0].offsetWidth + 30;
+            const visibleCards = 3;
             let index = 0;
 
             function updateCarousel() {
@@ -1008,6 +1008,14 @@
             }
 
             nextBtn.addEventListener('click', () => {
+              moveNext();
+            });
+
+            prevBtn.addEventListener('click', () => {
+              movePrev();
+            });
+
+            function moveNext() {
               index++;
               updateCarousel();
 
@@ -1016,11 +1024,11 @@
                   track.style.transition = 'none';
                   index = 0;
                   track.style.transform = `translateX(0px)`;
-                }, 500); 
+                }, 500);
               }
-            });
+            }
 
-            prevBtn.addEventListener('click', () => {
+            function movePrev() {
               index--;
               updateCarousel();
 
@@ -1031,7 +1039,43 @@
                   track.style.transform = `translateX(-${index * cardWidth}px)`;
                 }, 500);
               }
+            }
+
+            // --- Swipe support for mobile ---
+            let startX = 0;
+            let isDragging = false;
+
+            track.addEventListener('touchstart', (e) => {
+              startX = e.touches[0].clientX;
+              isDragging = true;
             });
+
+            track.addEventListener('touchmove', (e) => {
+              if (!isDragging) return;
+              const moveX = e.touches[0].clientX;
+              const diff = startX - moveX;
+
+              // Optional: move slightly with the finger (visual feedback)
+              track.style.transition = 'none';
+              track.style.transform = `translateX(calc(-${index * cardWidth}px - ${diff}px))`;
+            });
+
+            track.addEventListener('touchend', (e) => {
+              if (!isDragging) return;
+              const endX = e.changedTouches[0].clientX;
+              const diff = startX - endX;
+
+              // threshold for swipe
+              if (Math.abs(diff) > 50) {
+                if (diff > 0) moveNext(); // swipe left → next
+                else movePrev();          // swipe right → prev
+              } else {
+                updateCarousel(); // return to current position
+              }
+
+              isDragging = false;
+            });
+
           </script>
 
   
