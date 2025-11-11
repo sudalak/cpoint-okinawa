@@ -872,6 +872,7 @@ footer {
     }
     .paper-content{
         padding-right: 20px;
+        width: 90%;
     }
     .large-card, #seasons .paper-content>.d-flex {
         /* max-width: 250px; */
@@ -881,5 +882,11 @@ footer {
     }
     .footer-actions {
         gap: 0.25rem;
+    }
+    .small-card .title{
+        flex-direction: column;
+    }
+    .small-card .footer-actions{
+        justify-content: end;
     }
 }
